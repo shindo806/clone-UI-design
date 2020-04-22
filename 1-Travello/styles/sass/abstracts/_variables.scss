@@ -4,6 +4,8 @@ $max-width: 114rem;
 $gutter-vertical: 8rem; // margin bottom giữa các row
 $gutter-horizontal: 6rem; // giá trị khoảng cách giữa các column
 
+$btn-circle-size: 50px;
+$svg-size: 15px;
 // Break Points
 $grid__bp-sm: 576;
 $grid__bp-md: 768;
@@ -12,3 +14,23 @@ $grid__bp-xl: 1200;
 
 // Grid columns
 $grid__cols: 12;
+
+// Colors
+$primary-color: #76BA1B;
+$primary-dark-color: #eeeeee;
+$text-color-primary: #ffffff;
+$text-hover-color: #76BA1B;
+
+// Transition
+$transition-slow-speed: 300ms;
+$transition-fast-speed: 200ms;
+
+// Margin, padding
+$margin-medium: 10px;
+$margin-large: 20px;
+
+$padding-medium: 10px;
+$padding-large: 20px;
+
+// Fonts size
+$main-text-fontsize: 8rem;

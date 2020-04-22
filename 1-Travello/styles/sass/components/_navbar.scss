@@ -1,0 +1,60 @@
+.header {
+  width: 100%;
+  border-bottom: 2px solid $text-color-primary;
+  background-color: rgba(0, 0, 0, 0.1);
+
+  .logo a {
+    text-decoration: none;
+    color: $text-color-primary;
+
+    &:hover {
+      color: $text-hover-color;
+      transition: color $transition-slow-speed ease-in-out;
+    }
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%; // ul => dislay: inline-block => use height to set element get full height
+    align-items: center;
+    flex-wrap: wrap;
+
+    li {
+      list-style-type: none;
+
+      a {
+        text-decoration: none;
+        color: $text-color-primary;
+        text-transform: uppercase;
+        padding: $padding-large;
+        position: relative;
+
+        &:hover {
+          color: $text-hover-color;
+          transition: all $transition-slow-speed ease-in-out;
+        }
+
+        &:active {
+          color: $text-hover-color;
+        }
+
+      }
+
+      .active {
+        color: $text-hover-color;
+      }
+
+      svg {
+        width: $svg-size;
+        height: $svg-size;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -70%);
+      }
+    }
+
+
+  }
+}
