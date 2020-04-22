@@ -1,7 +1,7 @@
 .header {
   width: 100%;
-  border-bottom: 2px solid $text-color-primary;
-  background-color: rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid $text-color-primary;
+  background-color: rgba(0, 0, 0, 0.2);
 
   .logo a {
     text-decoration: none;
@@ -29,6 +29,8 @@
         text-transform: uppercase;
         padding: $padding-large;
         position: relative;
+        font-weight: 400;
+        letter-spacing: 2px;
 
         &:hover {
           color: $text-hover-color;

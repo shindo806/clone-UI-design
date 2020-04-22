@@ -1,10 +1,10 @@
 .hero {
   .banner {
-    position: relative;
-    height: 800px;
+
+    height: 600px;
 
     .banner-bg-image {
-      background-image: url(../../../images/header-bg.jpg);
+      background-image: url(../../../images/banner-bg.jpg);
       clip-path: polygon(50% 0%, 100% 0, 100% 85%, 50% 100%, 0% 85%, 0 0);
       position: absolute;
       top: 0;
