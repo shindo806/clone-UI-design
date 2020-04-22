@@ -28,7 +28,8 @@
 
       .banner-main-text {
         text-transform: uppercase;
-        letter-spacing: 30px;
+        letter-spacing: 40px;
+        font-weight: 200;
         color: $text-color-primary;
         font-size: $main-text-fontsize;
       }
@@ -37,7 +38,8 @@
         color: $text-color-primary;
         letter-spacing: 8px;
         text-transform: uppercase;
-        margin-top: -50px;
+        margin-top: -20px;
+        font-size: $sub-text-fontsize;
       }
 
     }

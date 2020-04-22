@@ -12,7 +12,7 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.7; }
@@ -234,14 +234,16 @@ body {
     transform: translate(-50%, -50%); }
     .hero .banner .heading-primary-text .banner-main-text {
       text-transform: uppercase;
-      letter-spacing: 30px;
+      letter-spacing: 40px;
+      font-weight: 200;
       color: #ffffff;
       font-size: 8rem; }
     .hero .banner .heading-primary-text .banner-slogan {
       color: #ffffff;
       letter-spacing: 8px;
       text-transform: uppercase;
-      margin-top: -50px; }
+      margin-top: -20px;
+      font-size: 1.2rem; }
   .hero .banner .btn-circle {
     position: absolute;
     bottom: -25px;
