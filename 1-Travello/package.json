@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "name": "1-travello",
+  "description": "<!-- Structure of landing page\r   body\r     header\r       top-nav\r       banner",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass styles/sass/main.scss styles/css/styles.css -wo"
+  },
+  "author": "",
+  "license": "ISC"
+}
