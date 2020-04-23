@@ -6,6 +6,8 @@ $gutter-horizontal: 6rem; // giá trị khoảng cách giữa các column
 
 $btn-circle-size: 50px;
 $svg-size: 15px;
+$card-svg-size: 40px;
+
 // Break Points
 $grid__bp-sm: 576;
 $grid__bp-md: 768;
@@ -20,7 +22,7 @@ $primary-color: #76BA1B;
 $primary-dark-color: #eeeeee;
 $text-color-primary: #ffffff;
 $text-hover-color: #76BA1B;
-
+$card-svg-primary-color: #76BA1B;
 // Transition
 $transition-slow-speed: 300ms;
 $transition-fast-speed: 200ms;
