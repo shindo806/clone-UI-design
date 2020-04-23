@@ -1,0 +1,65 @@
+.card {
+  max-width: 500px;
+
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 4px;
+      height: 100%;
+      background-color: $primary-color;
+      position: absolute;
+      top: 0;
+      left: -20px;
+    }
+  }
+
+  .card-describe {
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+
+  .card-list {
+    &:hover .card-list-icon {
+      transform: scale(1.2);
+      border: 1px solid $primary-color;
+      border-radius: 50%;
+    }
+
+    &:hover .card-list-text,
+    &:hover .card-list-link {
+      color: $primary-color;
+      border-bottom: 1px solid $primary-color;
+      cursor: pointer;
+      transition: $transition-fast-speed ease-in-out;
+      font-weight: 600;
+    }
+
+    .card-list-icon {
+      width: $svg-size;
+      height: $svg-size;
+      color: $primary-color;
+    }
+
+    .card-list-text {
+      font-weight: 200;
+      font-size: 1.2rem;
+      margin-left: 10px;
+      text-transform: capitalize;
+    }
+
+    .card-list-link {
+      font-weight: 200;
+      font-size: 1.2rem;
+      margin-left: 10px;
+      text-transform: capitalize;
+      text-decoration: none;
+      outline: none;
+      color: inherit;
+    }
+  }
+}

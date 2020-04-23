@@ -1,0 +1,15 @@
+.app {
+  display: block;
+
+  .app-image {
+    width: 300px;
+    margin: auto;
+    position: relative;
+
+    img {
+      padding-right: 50px;
+      transform: translate(50%, 15%);
+      max-width: 100%;
+    }
+  }
+}

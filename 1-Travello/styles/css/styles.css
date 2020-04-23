@@ -297,6 +297,17 @@ body {
       height: 100%;
       object-fit: cover; }
 
+.app {
+  display: block; }
+  .app .app-image {
+    width: 300px;
+    margin: auto;
+    position: relative; }
+    .app .app-image img {
+      padding-right: 50px;
+      transform: translate(50%, 15%);
+      max-width: 100%; }
+
 .primary-heading-title {
   text-align: center;
   font-size: 3rem;
@@ -311,3 +322,50 @@ body {
   font-size: 1.4rem;
   text-transform: capitalize;
   font-weight: 200; }
+
+.card {
+  max-width: 500px; }
+  .card .card-title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    position: relative; }
+    .card .card-title::before {
+      content: "";
+      width: 4px;
+      height: 100%;
+      background-color: #76BA1B;
+      position: absolute;
+      top: 0;
+      left: -20px; }
+  .card .card-describe {
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin: 10px 0; }
+  .card .card-list:hover .card-list-icon {
+    transform: scale(1.2);
+    border: 1px solid #76BA1B;
+    border-radius: 50%; }
+  .card .card-list:hover .card-list-text,
+  .card .card-list:hover .card-list-link {
+    color: #76BA1B;
+    border-bottom: 1px solid #76BA1B;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+    font-weight: 600; }
+  .card .card-list .card-list-icon {
+    width: 15px;
+    height: 15px;
+    color: #76BA1B; }
+  .card .card-list .card-list-text {
+    font-weight: 200;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    text-transform: capitalize; }
+  .card .card-list .card-list-link {
+    font-weight: 200;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    color: inherit; }
