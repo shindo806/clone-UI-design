@@ -1,27 +1,30 @@
 // import abstracts folder
-@import './abstracts/variables';
-@import './abstracts/functions';
-@import './abstracts/mixins';
+@import "./abstracts/variables";
+@import "./abstracts/functions";
+@import "./abstracts/mixins";
 
 // import base folder
-@import './base/animations';
-@import './base/base';
-@import './base/typography';
-@import './base/utilities';
+@import "./base/animations";
+@import "./base/base";
+@import "./base/typography";
+@import "./base/utilities";
 
 // import layout folder
-@import './layout/grid';
+@import "./layout/grid";
 
 // import pages folder
 
 // import components folder
-@import './components/button';
-@import './components/navbar';
-@import './components/hero';
-@import './components/about';
-@import './components/showcase';
-@import './components/app-instruction';
+@import "./components/button";
+@import "./components/navbar";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/showcase";
+@import "./components/app-instruction";
+@import "./components/contact";
+@import "./components/footer";
+@import "./components/advertisment";
 
 // Utils components
-@import './components/heading-title';
-@import './components/card';
+@import "./components/heading-title";
+@import "./components/card";

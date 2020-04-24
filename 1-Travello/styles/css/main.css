@@ -308,6 +308,15 @@ body {
       transform: translate(50%, 15%);
       max-width: 100%; }
 
+.contact {
+  background-color: dodgerblue;
+  color: white; }
+
+.ads {
+  color: white;
+  background-color: dodgerblue;
+  font-size: 124px; }
+
 .primary-heading-title {
   text-align: center;
   font-size: 3rem;

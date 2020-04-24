@@ -1,13 +1,14 @@
 {
   "devDependencies": {
-    "node-sass": "^4.13.1"
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
   },
   "name": "1-travello",
-  "description": "<!-- Structure of landing page\r   body\r     header\r       top-nav\r       banner",
+  "description": "",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "compile": "node-sass styles/sass/main.scss styles/css/styles.css -wo"
+    "sassWatch": "gulp sassWatch"
   },
   "author": "",
   "license": "ISC"
