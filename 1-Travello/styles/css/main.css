@@ -16,7 +16,8 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.7; }
+  line-height: 1.7;
+  text-rendering: optimizeLegibility; }
 
 .container {
   max-width: 1140px;
@@ -176,9 +177,11 @@ body {
     padding: 10px 20px;
     width: 200px;
     text-align: center;
+    border: 1px solid #76BA1B;
     border-radius: 40px;
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    text-transform: capitalize; }
     .btn.btn-primary:hover {
       background-color: #ffffff;
       color: #76BA1B;
@@ -314,7 +317,7 @@ body {
 
 .app {
   display: block;
-  margin-bottom: 20px; }
+  margin-bottom: 40px; }
   .app .app-image {
     width: 300px;
     margin: auto;
@@ -323,6 +326,8 @@ body {
       padding-right: 50px;
       transform: translate(50%, 15%);
       max-width: 100%; }
+  .app .col-lg-10 {
+    margin-left: -60px !important; }
 
 .contact {
   background-color: dodgerblue;
@@ -380,6 +385,58 @@ body {
     .subscribe .subscribe-input .btn-primary {
       margin: 0px 10px; }
 
+.advertisment {
+  padding: 4rem 0px; }
+  .advertisment .card {
+    margin: 0px 60px;
+    max-width: 400px; }
+    .advertisment .card .col-lg-2 {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .advertisment .card .col-lg-10 {
+      margin-left: -40px; }
+    .advertisment .card .card-list-icon {
+      width: 30px !important;
+      height: 30px !important; }
+  .advertisment .card-list {
+    margin: 30px 0px !important; }
+  .advertisment .card-skill-name {
+    margin-left: 30px !important; }
+  .advertisment .card-skill-bar {
+    margin-top: 10px;
+    width: 86%;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: relative; }
+  .advertisment .skill1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 4px;
+    background-color: #76BA1B;
+    z-index: 10; }
+  .advertisment .skill2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 4px;
+    background-color: #76BA1B;
+    z-index: 10; }
+  .advertisment .skill3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 4px;
+    background-color: #76BA1B;
+    z-index: 10; }
+
 .primary-heading-title {
   text-align: center;
   font-size: 3rem;
@@ -413,31 +470,33 @@ body {
     font-weight: 300;
     font-size: 1.1rem;
     margin: 10px 0; }
-  .card .card-list:hover .card-list-icon {
-    transform: scale(1.2);
-    border: 1px solid #76BA1B;
-    border-radius: 50%; }
-  .card .card-list:hover .card-list-text,
-  .card .card-list:hover .card-list-link {
-    color: #76BA1B;
-    border-bottom: 1px solid #76BA1B;
-    cursor: pointer;
-    transition: 200ms ease-in-out;
-    font-weight: 600; }
-  .card .card-list .card-list-icon {
-    width: 15px;
-    height: 15px;
-    color: #76BA1B; }
-  .card .card-list .card-list-text {
-    font-weight: 200;
-    font-size: 1.2rem;
-    margin-left: 10px;
-    text-transform: capitalize; }
-  .card .card-list .card-list-link {
-    font-weight: 200;
-    font-size: 1.2rem;
-    margin-left: 10px;
-    text-transform: capitalize;
-    text-decoration: none;
-    outline: none;
-    color: inherit; }
+  .card .card-list {
+    margin: 20px 0px; }
+    .card .card-list .col-lg-2 {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+    .card .card-list .col-lg-10 {
+      margin-left: -30px; }
+    .card .card-list:hover .card-list-link {
+      color: #76BA1B;
+      border-bottom: 1px solid #76BA1B;
+      cursor: pointer;
+      transition: 200ms ease-in-out;
+      font-weight: 600; }
+    .card .card-list .card-list-icon {
+      width: 15px;
+      height: 15px;
+      color: #76BA1B; }
+    .card .card-list .card-list-text {
+      font-weight: 200;
+      font-size: 1rem;
+      margin-left: 10px; }
+    .card .card-list .card-list-link {
+      font-weight: 200;
+      font-size: 1rem;
+      margin-left: 10px;
+      text-transform: capitalize;
+      text-decoration: none;
+      outline: none;
+      color: inherit; }

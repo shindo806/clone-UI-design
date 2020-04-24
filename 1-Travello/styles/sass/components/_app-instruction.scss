@@ -1,6 +1,6 @@
 .app {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
   .app-image {
     width: 300px;
@@ -12,5 +12,9 @@
       transform: translate(50%, 15%);
       max-width: 100%;
     }
+  }
+
+  .col-lg-10 {
+    margin-left: -60px !important;
   }
 }

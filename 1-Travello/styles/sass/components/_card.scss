@@ -24,13 +24,18 @@
   }
 
   .card-list {
-    &:hover .card-list-icon {
-      transform: scale(1.2);
-      border: 1px solid $primary-color;
-      border-radius: 50%;
+    margin: 20px 0px;
+
+    .col-lg-2 {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
     }
 
-    &:hover .card-list-text,
+    .col-lg-10 {
+      margin-left: -30px;
+    }
+
     &:hover .card-list-link {
       color: $primary-color;
       border-bottom: 1px solid $primary-color;
@@ -47,14 +52,13 @@
 
     .card-list-text {
       font-weight: 200;
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin-left: 10px;
-      text-transform: capitalize;
     }
 
     .card-list-link {
       font-weight: 200;
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin-left: 10px;
       text-transform: capitalize;
       text-decoration: none;

@@ -1,5 +1,75 @@
-.ads {
-  color: white;
-  background-color: dodgerblue;
-  font-size: 124px;
+.advertisment {
+  padding: 4rem 0px;
+
+  .card {
+    margin: 0px 60px;
+    max-width: 400px;
+
+    .col-lg-2 {
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+    }
+
+    .col-lg-10 {
+      margin-left: -40px;
+    }
+
+    .card-list-icon {
+      width: 30px !important;
+      height: 30px !important;
+    }
+  }
+
+  .card-list {
+    margin: 30px 0px !important;
+  }
+
+  .card-skill-name {
+    margin-left: 30px !important;
+  }
+
+  .card-skill-bar {
+    margin-top: 10px;
+    width: 86%;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+
+  .skill1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 4px;
+    background-color: $primary-color;
+    z-index: 10;
+  }
+
+  .skill2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 4px;
+    background-color: $primary-color;
+    z-index: 10;
+  }
+
+  .skill3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 4px;
+    background-color: $primary-color;
+    z-index: 10;
+  }
+
+
 }

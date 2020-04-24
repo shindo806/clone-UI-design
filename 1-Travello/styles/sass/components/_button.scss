@@ -39,9 +39,11 @@
     padding: 10px 20px;
     width: 200px;
     text-align: center;
+    border: 1px solid $primary-color;
     border-radius: 40px;
     outline: none;
     cursor: pointer;
+    text-transform: capitalize;
 
     &:hover {
       background-color: $text-color-primary;
