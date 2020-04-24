@@ -2,6 +2,14 @@
   display: inline-block;
   background-color: #ffffff;
   position: relative;
+  text-decoration: none;
+  padding: 10px 20px;
+  width: 200px;
+  text-align: center;
+  border-radius: 40px;
+  outline: none;
+  cursor: pointer;
+  text-transform: capitalize;
 
   &.btn-circle {
     width: $btn-circle-size;
@@ -33,21 +41,26 @@
   }
 
   &.btn-primary {
-    text-decoration: none;
     background-color: $primary-color;
     color: white;
-    padding: 10px 20px;
-    width: 200px;
-    text-align: center;
     border: 1px solid $primary-color;
-    border-radius: 40px;
-    outline: none;
-    cursor: pointer;
-    text-transform: capitalize;
 
     &:hover {
       background-color: $text-color-primary;
       color: $primary-color;
+      transition: all $transition-fast-speed ease-in-out;
+    }
+  }
+
+  &.btn-revert {
+    background-color: $text-color-primary;
+    color: $primary-dark-color;
+    border: 1px solid $primary-color;
+
+    &:hover {
+      background-color: $text-hover-color;
+      color: $text-color-primary;
+      border-color: $text-color-primary;
       transition: all $transition-fast-speed ease-in-out;
     }
   }

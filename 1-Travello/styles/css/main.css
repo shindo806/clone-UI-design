@@ -148,16 +148,24 @@ body {
 .btn {
   display: inline-block;
   background-color: #ffffff;
-  position: relative; }
+  position: relative;
+  text-decoration: none;
+  padding: 10px 20px;
+  width: 200px;
+  text-align: center;
+  border-radius: 40px;
+  outline: none;
+  cursor: pointer;
+  text-transform: capitalize; }
   .btn.btn-circle {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 1px solid #eeeeee;
+    border: 1px solid #7b7b7b;
     outline: none; }
     .btn.btn-circle:hover {
       cursor: pointer;
-      background-color: #76BA1B;
+      background-color: #bbd87b;
       border-color: #ffffff;
       transition: all 200ms ease-in-out; }
       .btn.btn-circle:hover svg {
@@ -169,22 +177,23 @@ body {
       transform: translate(-50%, -50%);
       width: 100%;
       height: 60%;
-      color: #76BA1B; }
+      color: #bbd87b; }
   .btn.btn-primary {
-    text-decoration: none;
-    background-color: #76BA1B;
+    background-color: #bbd87b;
     color: white;
-    padding: 10px 20px;
-    width: 200px;
-    text-align: center;
-    border: 1px solid #76BA1B;
-    border-radius: 40px;
-    outline: none;
-    cursor: pointer;
-    text-transform: capitalize; }
+    border: 1px solid #bbd87b; }
     .btn.btn-primary:hover {
       background-color: #ffffff;
-      color: #76BA1B;
+      color: #bbd87b;
+      transition: all 200ms ease-in-out; }
+  .btn.btn-revert {
+    background-color: #ffffff;
+    color: #7b7b7b;
+    border: 1px solid #bbd87b; }
+    .btn.btn-revert:hover {
+      background-color: #bbd87b;
+      color: #ffffff;
+      border-color: #ffffff;
       transition: all 200ms ease-in-out; }
 
 .header {
@@ -195,7 +204,7 @@ body {
     text-decoration: none;
     color: #ffffff; }
     .header .logo a:hover {
-      color: #76BA1B;
+      color: #bbd87b;
       transition: color 300ms ease-in-out; }
   .header .main-nav {
     display: flex;
@@ -214,12 +223,12 @@ body {
         font-weight: 400;
         letter-spacing: 2px; }
         .header .main-nav li a:hover {
-          color: #76BA1B;
+          color: #bbd87b;
           transition: all 300ms ease-in-out; }
         .header .main-nav li a:active {
-          color: #76BA1B; }
+          color: #bbd87b; }
       .header .main-nav li .active {
-        color: #76BA1B; }
+        color: #bbd87b; }
       .header .main-nav li svg {
         width: 15px;
         height: 15px;
@@ -290,7 +299,7 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        color: #76BA1B; }
+        color: #bbd87b; }
     .about .about-card .about-title {
       text-transform: capitalize;
       font-size: 2rem;
@@ -367,7 +376,7 @@ body {
     z-index: 100; }
     .subscribe .subscribe-input input {
       outline: none;
-      border: 1px solid #eeeeee;
+      border: 1px solid #7b7b7b;
       width: 250px;
       padding: 10px 20px;
       border-radius: 40px;
@@ -416,7 +425,7 @@ body {
     left: 0;
     width: 80%;
     height: 4px;
-    background-color: #76BA1B;
+    background-color: #bbd87b;
     z-index: 10; }
   .advertisment .skill2::after {
     content: "";
@@ -425,7 +434,7 @@ body {
     left: 0;
     width: 70%;
     height: 4px;
-    background-color: #76BA1B;
+    background-color: #bbd87b;
     z-index: 10; }
   .advertisment .skill3::after {
     content: "";
@@ -434,8 +443,68 @@ body {
     left: 0;
     width: 90%;
     height: 4px;
-    background-color: #76BA1B;
+    background-color: #bbd87b;
     z-index: 10; }
+
+.pricing-plan {
+  background-color: #f7f7f7;
+  display: flex;
+  padding: 40px 40px 60px 40px; }
+  .pricing-plan .row {
+    justify-content: center;
+    align-items: center; }
+  .pricing-plan .pricing-plan-card {
+    height: 550px;
+    width: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
+    .pricing-plan .pricing-plan-card .pricing-card-name {
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-transform: capitalize;
+      margin: 40px 0px; }
+    .pricing-plan .pricing-plan-card .pricing-card-price {
+      font-size: 2rem;
+      margin-bottom: 40px; }
+    .pricing-plan .pricing-plan-card .circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      box-shadow: -6px 6px 10px rgba(0, 0, 0, 0.4);
+      position: relative; }
+      .pricing-plan .pricing-plan-card .circle span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+    .pricing-plan .pricing-plan-card .pricing-card-details {
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center; }
+    .pricing-plan .pricing-plan-card .pricing-card-detail {
+      text-transform: capitalize;
+      margin: 5px 0px; }
+    .pricing-plan .pricing-plan-card.sub-card {
+      background-color: #ffffff; }
+      .pricing-plan .pricing-plan-card.sub-card .pricing-card-price {
+        color: #ffffff; }
+      .pricing-plan .pricing-plan-card.sub-card .circle {
+        background-color: #bbd87b; }
+      .pricing-plan .pricing-plan-card.sub-card .pricing-card-detail {
+        color: #7b7b7b; }
+    .pricing-plan .pricing-plan-card.main-card {
+      background-color: #bbd87b; }
+      .pricing-plan .pricing-plan-card.main-card .pricing-card-price {
+        color: #7b7b7b; }
+      .pricing-plan .pricing-plan-card.main-card .circle {
+        background-color: #ffffff; }
+      .pricing-plan .pricing-plan-card.main-card .pricing-card-detail {
+        color: #ffffff; }
 
 .primary-heading-title {
   text-align: center;
@@ -448,9 +517,10 @@ body {
 .sub-heading-title {
   display: block;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-transform: capitalize;
-  font-weight: 200; }
+  font-weight: 200;
+  letter-spacing: 3px; }
 
 .card {
   max-width: 500px; }
@@ -462,7 +532,7 @@ body {
       content: "";
       width: 4px;
       height: 100%;
-      background-color: #76BA1B;
+      background-color: #bbd87b;
       position: absolute;
       top: 0;
       left: -20px; }
@@ -479,15 +549,15 @@ body {
     .card .card-list .col-lg-10 {
       margin-left: -30px; }
     .card .card-list:hover .card-list-link {
-      color: #76BA1B;
-      border-bottom: 1px solid #76BA1B;
+      color: #bbd87b;
+      border-bottom: 1px solid #bbd87b;
       cursor: pointer;
       transition: 200ms ease-in-out;
       font-weight: 600; }
     .card .card-list .card-list-icon {
       width: 15px;
       height: 15px;
-      color: #76BA1B; }
+      color: #bbd87b; }
     .card .card-list .card-list-text {
       font-weight: 200;
       font-size: 1rem;
