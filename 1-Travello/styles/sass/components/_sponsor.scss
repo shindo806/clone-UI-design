@@ -1,0 +1,23 @@
+.sponsor {
+  display: flex;
+  padding: 40px;
+
+  .row {
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      width: $medium-svg-size;
+      height: $medium-svg-size;
+      color: $primary-color;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .companies-logo {
+      width: 150px;
+      margin: 10px;
+    }
+  }
+
+}

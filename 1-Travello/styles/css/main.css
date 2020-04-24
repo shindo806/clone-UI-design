@@ -506,6 +506,22 @@ body {
       .pricing-plan .pricing-plan-card.main-card .pricing-card-detail {
         color: #ffffff; }
 
+.sponsor {
+  display: flex;
+  padding: 40px; }
+  .sponsor .row {
+    justify-content: center;
+    align-items: center; }
+    .sponsor .row svg {
+      width: 30px;
+      height: 30px;
+      color: #bbd87b;
+      margin: 10px;
+      cursor: pointer; }
+    .sponsor .row .companies-logo {
+      width: 150px;
+      margin: 10px; }
+
 .primary-heading-title {
   text-align: center;
   font-size: 3rem;
